@@ -1,0 +1,308 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+  font-weight: normal;
+}
+
+/* link */
+a:link, a:visited {
+	color: #FF6600;
+	text-decoration: none;
+}
+a:focus, a:hover {
+	text-decoration: underline;
+}
+
+/* elementi per l'autocomplete */
+.ui-autocomplete-loading {
+	background: white url(\"/static/ui-anim_basic_16x16.gif\") right center no-repeat;
+}
+.ui-autocomplete {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+  font-weight: normal;
+}
+
+/* titolo in testa alla pagina */
+.titolopagina {
+	font-size: 1.6em;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 0.1em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  border-bottom: thin dotted black;
+}
+
+/* testo al piede della pagina */
+.piedepagina {
+	font-size: 0.8em;
+  text-align: right;
+  margin-top: 0;
+  border-top: thin dotted black;
+  background: #e0e0e0;
+}
+
+/* tabelle  */
+table {
+	font-size: 0.9em;
+  font-weight: normal;
+}
+
+/* input  */
+input {
+	font-size: 0.9em;
+  font-weight: normal;
+}
+
+/* textarea */
+textarea {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
+  font-weight: normal;
+}
+
+/* select */
+select {
+	font-size: 0.9em;
+  font-weight: normal;
+}
+
+/* option */
+option {
+	font-size: 0.9em;
+  font-weight: normal;
+}
+
+/* errore nei form */
+span.err {
+	color: #e00000;
+  font-weight: bold;
+}
+
+/* calendario mensile */
+table.calendar { 
+	border-left: 1px solid #999; 
+}
+tr.calendar-row	{  
+}
+td.calendar-day	{ 
+	min-height: 80px; 
+	font-size: 1em; 
+	position: relative; 
+	vertical-align: top;
+} 
+* html div.calendar-day { 
+	height: 80px; 
+}
+td.calendar-day:hover	{ 
+	background: #eceff5; 
+}
+td.calendar-day-np { 
+	background: #eee; 
+	min-height: 80px; 
+} 
+* html div.calendar-day-np { 
+	height: 80px; 
+}
+td.calendar-day-head { 
+	background: #ccc; 
+	font-weight: bold; 
+	text-align: center; 
+	width: 120px; 
+	padding: 5px; 
+	border-bottom: 1px solid #999; 
+	border-top: 1px solid #999; 
+	border-right: 1px solid #999; 
+}
+div.day-number { 
+	background: #999; 
+	padding: 5px; 
+	color: #fff; 
+	font-weight: bold; 
+	float: right; 
+	margin: -5px -5px 0 0; 
+	width: 20px; 
+	text-align: center; 
+}
+div.day-number-today { 
+	background: #e70300; 
+	padding: 5px; 
+	color: #fff; 
+	font-weight: bold; 
+	float: right; 
+	margin: -5px -5px 0 0; 
+	width: 20px; 
+	text-align: center; 
+}
+td.calendar-day, td.calendar-day-np { 
+	width: 120px; 
+	padding: 5px; 
+	border-bottom: 1px solid #999; 
+	border-right: 1px solid #999; 
+}
+
+a.assenzacalendario:link, a.assenzacalendario:visited {
+	color: purple;
+  font-size: 0.7em;
+	text-decoration: none;
+}
+a.assenzacalendario:focus, a.assenzacalendario:hover {
+	color: purple;
+  font-size: 0.7em;
+	text-decoration: underline;
+}
+
+/* icona del date picker */
+.ui-datepicker-trigger {
+	position:relative; 
+	top: 4px; 
+	left: 5px;
+}
+
+
+
+/*-MENU---------------------*/
+#cssmenu {
+  font-size: 1em;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: left;
+  z-index: 105;
+}
+#cssmenu > ul {
+  width: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  border: 1px solid #ece6e8;
+  border-bottom: 3px solid #d9ced2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  z-index: 105;
+}
+#cssmenu > ul li#responsive-tab {
+  display: none;
+  /* Hide for large screens */
+  z-index: 105;
+}
+#cssmenu > ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  z-index: 105;
+}
+#cssmenu > ul li.right {
+  float: right;
+  z-index: 105;
+}
+#cssmenu > ul li.has-sub {
+  position: relative;
+  z-index: 105;
+}
+#cssmenu > ul li.has-sub:hover ul {
+  display: block;
+  z-index: 105;
+}
+#cssmenu > ul li.has-sub ul {
+  display: none;
+  width: 250px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #ffffff;
+  border: 1px solid #ece6e8;
+  border-bottom: 3px solid #d9ced2;
+  border-top: 0 none;
+  z-index: 105;
+}
+#cssmenu > ul li.has-sub ul li {
+  display: block;
+  z-index: 105;
+}
+#cssmenu > ul li.has-sub > a {
+  background-image: url('caret.png');
+  background-repeat: no-repeat;
+  background-position: 90% -95%;
+  z-index: 105;
+}
+#cssmenu > ul li.has-sub > a.active,
+#cssmenu > ul li.has-sub > a:hover {
+  background: #ff6600 url('caret.png') no-repeat;
+  background-position: 90% 195%;
+  z-index: 105;
+}
+#cssmenu > ul li a {
+  display: block;
+  padding: 12px 24px 11px 24px;
+  text-decoration: none;
+  color: #747474;
+  text-shadow: 0px 1px 0px #fff;
+  z-index: 105;
+}
+#cssmenu > ul li a.active,
+#cssmenu > ul li a:hover {
+  background: #ff6600;
+  color: #fff;
+  text-shadow: 0px 1px 0px #000;
+  z-index: 105;
+}
+@media (max-width: 600px) {
+  #cssmenu > ul {
+    width: 100%;
+  }
+  #cssmenu > ul li#responsive-tab {
+    display: block;
+  }
+  #cssmenu > ul li#responsive-tab a {
+    background: url('menu.png') no-repeat;
+    background-position: 95% -35%;
+  }
+  #cssmenu > ul li#responsive-tab a:hover {
+    background-color: #ff6600;
+    background-position: 95% 135%;
+  }
+  #cssmenu > ul li {
+    display: none;
+  }
+  #cssmenu > ul li.right {
+    float: none;
+  }
+  #cssmenu > ul li.has-sub {
+    position: relative;
+  }
+  #cssmenu > ul li.has-sub ul {
+    display: block;
+    position: static;
+    width: 100%;
+    background: #ffffff;
+    border: 0 none;
+  }
+  #cssmenu > ul li.has-sub ul li {
+    display: block !important;
+  }
+  #cssmenu > ul li.has-sub ul li a span {
+    display: block;
+    padding-left: 24px;
+  }
+  #cssmenu > ul li.has-sub > a {
+    background-image: none;
+  }
+  z-index: 105;
+}
+/* Make sure they show even if hidden in mobile view by JS */
+@media (min-width: 600px) {
+  #cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
+  z-index: 105;
+}

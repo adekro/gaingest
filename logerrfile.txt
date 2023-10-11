@@ -1,0 +1,8 @@
+pla_dettaglioplanning.server.php errorPHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in W:\xampp\htdocs\gaingest\vendor\phpmailer\phpmailer\src\PHPMailer.php:2214
+Stack trace:
+#0 W:\xampp\htdocs\gaingest\vendor\phpmailer\phpmailer\src\PHPMailer.php(2003): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 W:\xampp\htdocs\gaingest\vendor\phpmailer\phpmailer\src\PHPMailer.php(1662): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Wed, 11 O...', '<p>Dettaglio de...')
+#2 W:\xampp\htdocs\gaingest\vendor\phpmailer\phpmailer\src\PHPMailer.php(1500): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 W:\xampp\htdocs\gaingest\global.php(401): PHPMailer\PHPMailer\PHPMailer->send()
+#4 W:\xampp\htdocs\gaingest\pla_dettaglioplanning.server.php(148): notificaplanning('51', '8481')
+#5 {main}
